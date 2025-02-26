@@ -1,0 +1,402 @@
+.body{
+    color: rgb(0, 0, 0);
+}
+
+.profil{
+    border-radius: 25px;
+    width: 50px;
+    height: 50px; 
+   
+}
+
+.logo{
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.main-logo{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.kiri{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-style:normal ;
+    font-size: 20px;
+    color: black;
+    transition: 0,3ms;
+  
+}
+
+.kiri:hover{
+    color: rgb(212, 212, 212);
+    opacity: 0,3;
+}
+
+.kiri:active{
+    color: rgb(141, 141, 141);
+}
+
+.tengah{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-style:normal ;
+    font-size: 20px;
+    color: black;
+    border-radius: 0;
+}
+
+.tengah:hover{
+    color: rgb(212, 212, 212);
+    opacity: 0,3;
+}
+
+.tengah:active{
+    color: rgb(141, 141, 141);
+}
+
+.kanan{ 
+     border: 1px solid;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-style:normal ;
+    font-size: 20px;
+    color: black;
+}
+
+.kanan:hover{
+    color: rgb(212, 212, 212);
+    opacity: 0,3;
+}
+
+.kanan:active{
+    color: rgb(141, 141, 141);
+}
+
+nav{
+    display: flex;
+}
+
+.main-header{
+    font-family: roboto; 
+    text-align: center;
+}
+
+
+.second-header{
+    color: rgb(97, 97, 99);
+}
+
+.main-content{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+    
+}
+
+.image-container{
+    width: 1000px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 3px;
+    
+    
+}
+.image img{
+    width: 1000px;
+    justify-content: center;
+    height: 500px;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.profil-container{
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.comment{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    opacity: 0,5;
+    color: rgb(129, 126, 122);
+    margin-left: 20px;
+}
+
+ol{
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+li{
+    font-family: sans-serif;
+    counter-increment: list-counter;
+    position: relative;
+    margin-bottom: 10px;
+    color: rgb(192, 192, 191);
+    font-weight: lighter;
+}
+
+li::before{
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(185, 183, 180);
+    color: rgb(104, 103, 101);
+    font-weight: bold;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.customer-name{
+    font-family: roboto; 
+    margin: 0;
+}
+
+.customer-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.customer-background{
+    color: rgb(129, 126, 122);
+}
+
+
+.main-container2{
+    flex: 1;
+    height: 500px;
+    background-color: rgb(243, 241, 241);
+    border-radius: 3px;
+}
+
+#error{
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+   align-items: center;
+  align-items: center; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 50px;
+}
+
+.input-control input{
+    border: 2px solid;
+    border-radius: 4px;
+    display: block;
+    width: 290px;
+    height: 50px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.input-control.success input{
+    border-color: green;
+    border-radius: 4px;
+    width: 290px;
+    height: 50px;
+}
+
+.input-control.error input{
+    border-color: rgb(255, 0, 0);
+    border-radius: 4px;
+    width: 290px;
+    height: 50px;
+}
+
+.submit{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: black;
+    transition: 0,3s;
+    
+}
+
+.submit:hover{
+    cursor: pointer;
+   background-color: rgb(50,50,50);
+   opacity: 0,8;
+}
+.submit:active{
+    background-color: rgb(80,80,80);
+    opacity: 0,2;
+}
+
+.contact-us{
+   padding-left: 20px;
+}
+
+.contact-us2{
+    max-width: 200px;
+    padding-left: 20px;
+    font-family: roboto;
+    color: rgb(138, 137, 137);
+}
+
+.form-data{
+    margin-left: 60px
+}
+
+.customer-input{
+    width: 300px;
+    height: 36px;
+    border-radius: 3px;
+    border: 2px solid;
+}
+
+.utama{
+    justify-content: center;
+}
+
+.slider{
+    transition: 0.5s ease-in-out;
+    opacity: 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider.active{
+    opacity: 1;
+}
+
+.category{
+    text-align: center;
+    font-family: roboto;
+    background-color: rgb(138, 137, 137);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.package-category{
+    width: 1010px;
+   justify-content: center;
+   margin: auto;    
+   
+}
+
+.panel{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    
+}
+
+.bulb img{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.bulb{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tempat{
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.detail-tempat{
+    font-family: roboto;
+    color: rgb(206, 206, 206);
+}
+
+
+.bulb img{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.closing{
+    text-align: center;
+    font-family: roboto;
+}
+
+.closing-deskription{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(138, 137, 137);
+}
+
+.contact{
+    text-align: center;
+    font-family: roboto;
+    color: rgb(138, 137, 137);
+}
+
+
+@media only screen and (max-width: 600px){
+    .main-logo{
+        flex-direction: column;
+    }
+    .menu{
+    flex-direction: column;
+    }
+
+    
+    .main-content{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-container2{
+    flex-direction: column;
+}
+}
+    
