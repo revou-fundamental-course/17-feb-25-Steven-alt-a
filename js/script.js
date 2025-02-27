@@ -34,7 +34,7 @@ const setError = (Element, message) => {
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
-}
+};
 
 const setSuccess = Element => {
     const inputControl = Element.parentElement;
@@ -43,22 +43,30 @@ const setSuccess = Element => {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-}
+};
 
 const validateInput = () => {
     const nameValue = name.value.trim();
     const emailValue = email.value.trim();
+    let valid = true;
 
     if (nameValue === '') {
         setError(name, 'Name is required');
+        valid = false;
     } else {
         setSuccess(name);
     }
 
     if (emailValue === '') {
         setError(email, 'email is required');
+        valid = false;
     } else {
         setSuccess(email);
+    }
+
+    if (valid) {
+        alert('welcome  ' + nameValue);
+        form.onsubmit();
     }
 };
 
